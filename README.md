@@ -28,7 +28,6 @@ This project was built to understand how real-world NLP pipelines work, from tex
 * `Train.py` → trains the model
 * `Predict.py` → loads model and makes predictions
 * `Toxicity_Detector.h5` → saved trained model
-* `.gitignore` → ignores dataset and unnecessary files
 
 ---
 
