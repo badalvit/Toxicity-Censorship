@@ -1,64 +1,45 @@
-# Toxicity Detector (Deep Learning)
+# Toxicity Censorship model
 
-This project is a deep learning model that detects toxic comments from text.
-It takes a sentence as input and predicts whether it belongs to categories like insult, threat, obscene, etc.
+This is a small deep learning project where I built a model to detect toxic comments.  
+You give it a sentence, and it tells you if it’s toxic (insult, threat, etc.).
 
-This project was built to understand how real-world NLP pipelines work, from text preprocessing to model training and prediction.
+I made this mainly to understand how NLP models actually work in real life.
 
 ---
 
 ## How it works
 
-1. The input text is converted into numbers using a TextVectorization layer
-2. The processed text is passed through a Bidirectional LSTM model
-3. The model outputs probabilities for different toxicity labels
+- Text is converted into numbers  
+- Passed through an LSTM model  
+- Outputs scores for different toxicity labels  
 
 ---
 
-## Tech Used
+## Tech used
 
-* Python
-* TensorFlow / Keras
-* Pandas
+Python, TensorFlow/Keras, Pandas
 
 ---
 
-## Project Structure
+## Files
 
-* `Train.py` → trains the model
-* `Predict.py` → loads model and makes predictions
-* `Toxicity_Detector.h5` → saved trained model
+- Train.py → trains the model  
+- Predict.py → tests it  
+- Toxicity_Detector.h5 → saved model  
 
 ---
 
 ## Dataset
 
-The dataset used in this project is around 66 MB and is not included in this repository.
+Dataset is not included (around 66 MB).
 
-To run the project:
+Download from Kaggle and place it in the folder, then:
 
-1. Download the dataset from the original source from kaggle from the link "https://www.kaggle.com/datasets/julian3833/jigsaw-toxic-comment-classification-challenge"
-2. Place it in the project folder
-3. Update the file path in the code if needed
-4. Train the model using `Train.py`
-5. After training on the data test the model using `Predict.py`
+python Train.py  
+python Predict.py  
 
 ---
 
-## Why this project?
+## Notes
 
-This project focuses on understanding:
-
-* How text is converted into numerical form
-* How LSTM models process sequential data
-* How to maintain consistency between training and prediction
-
----
-
-## Future Improvements
-
-* Improve model accuracy
-* Reduce training time
-* Build a simple interface for predictions
-
-
+Still a basic model. Accuracy can be improved and UI can be added later.
